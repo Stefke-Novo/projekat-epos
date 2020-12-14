@@ -1,3 +1,4 @@
+/*Za sve elemente na saljdu*/
 *{
     margin:0;
     padding:0;
@@ -10,6 +11,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+/*Menu*/
 a,button{
     font-family: "Poppins" , sans-serif;
 }
@@ -87,16 +89,12 @@ a,button{
     width: 100%;
     height: 100%;
 }
-
-h3 ,#dugme{
-
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: seagreen;
+nav li{
+    border-radius: 10px;
 }
+/*ostali elementi na slajdu*/
 
+/*menu sa informacijama*/
 .d1,
 .d2 {
 
@@ -105,6 +103,22 @@ h3 ,#dugme{
     border-radius: 10px;
 
 }
+.d1 section ul{
+    width: 200px;
+    list-style-type: none;
+}
+.d1 section p ,.d1 section ul{
+    margin-left: auto;
+    margin-right: auto;
+}
+.d1 section p{
+    width:60%;
+    text-align: center;
+}
+li{
+    text-align: center;
+}
+/*Slike na slajdu*/
 .slike {
     margin: 10px 10px 10px 10px;
     display: flex;
@@ -117,7 +131,10 @@ h3 ,#dugme{
     height:30%;
     width: 40%;
 }
-
+#istorija1,#dečijiKamp2{
+    cursor: pointer;
+}
+/*Slike u galeriji*/
 .divSlika {
     display: flex;
     justify-content: center;
@@ -140,31 +157,12 @@ h3 ,#dugme{
     color: none;
     font-size: 18px;;
 }
-#istorija1,#dečijiKamp2{
-    cursor: pointer;
-}
-.d1 section ul{
-    width: 200px;
-    list-style-type: none;
-}
-.d1 section p ,.d1 section ul{
-    margin-left: auto;
-    margin-right: auto;
-}
-.d1 section p{
-    width:60%;
-    text-align: center;
-}
-li{
-    text-align: center;
-}
-nav li{
-    border-radius: 10px;
-}
+
 h3{
     border: 2px solid black;
     border-radius: 10px;
 }
+/*animacija*/
 .srce {
 
     position: fixed;
@@ -213,4 +211,12 @@ h3{
 #dugmeAnimacija button{
     height: 100%;
     width: 100%;
+}
+h3 ,#dugme{
+
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: seagreen;
 }

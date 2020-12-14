@@ -1,3 +1,4 @@
+/*Z sve elemente koji se budu pravili naknadno*/
 *{
     margin:0;
     padding:0;
@@ -7,9 +8,11 @@ body{
     height: 100vh;
     font-family: "Poppins" , sans-serif;
 }
+/*Stil fonta na svim dugmićima i linkovima*/
 a,button{
     font-family: "Poppins" , sans-serif;
 }
+/*Stil za meni*/
 .klizućiMeniji{
     height: 10vh;
     display: flex;
@@ -81,6 +84,10 @@ a,button{
     width: 100%;
     height: 100%;
 }
+nav li{
+    border-radius: 10px;
+}
+/*Velika slika sa zapisom*/
 #slikaPozadina{
     background-image: url("../Slike/aaron-thomas-668997-unsplash.jpg");
     background-repeat: no-repeat;
@@ -99,19 +106,9 @@ a,button{
     margin-bottom: 20%;
     margin-left: 70%;
 }
-#pasus2{
-    text-align: center;
-    margin-top: 50px;
-    margin-right: 30%;
-    margin-left: 30%;
-    margin-bottom: 50px;
-}
+/*Dve vrste sekcija ispod slike*/
 .pasus3,.pasus4{
     margin: 5px 5px 5px 5px;
-}
-.slika1{
-    height: 250px;
-    width: 20%px;
 }
 .slika2{
     height: 250px;
@@ -135,6 +132,7 @@ a,button{
     align-items: center;
     background-image: linear-gradient(to right ,black,chartreuse) ;
 }
+/*futer*/
 footer{
     height: 75px;
     background-color: blue;
@@ -143,6 +141,7 @@ footer{
     padding-top: 25px;
     color:white;
 }
+/*uvod u slajd*/
 #uvod{
     background-image: url("../Slike/luca-micheli-551329-unsplash.jpg");
     background-size: 100% 100%;
@@ -178,6 +177,7 @@ footer{
     transform: translateY(100%);
     display: inline-block;
 }
+/*pasusi u sekcijama*/
 p{
     max-width: 45%;
 }
@@ -192,7 +192,4 @@ p{
     font-weight: bold;
     font-style: italic;
     color: darkblue;
-}
-nav li{
-    border-radius: 10px;
 }

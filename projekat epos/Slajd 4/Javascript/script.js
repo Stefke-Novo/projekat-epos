@@ -1,3 +1,4 @@
+//Spisak elemenata 
 const forma =document.getElementById('forma1');
 const prezime =document.getElementById('prezimep');
 const ime =document.getElementById('imep');
@@ -7,9 +8,13 @@ const dugme = document.getElementById('potvrdi');
 const letnjiKamp = document.getElementById('kampovi');
 const zimskiKamp = document.getElementById('zkampovi');
 const slike = document.getElementsByClassName('slike');
+//Submit funkcija
 forma.addEventListener('submit',(e)=>{
     e.preventDefault();
     proveriUneseneVrednosti();
+
+    //Opomena ako nešto od CheckBox-ova nije check-irano a trebalo bi 
+
     if(cekiraj(document.getElementsByClassName('pold')));
     else alert ('Niste odabrali polje za pol.');
     if(cekiraj(document.getElementsByClassName('kampd')));
@@ -20,6 +25,9 @@ forma.addEventListener('submit',(e)=>{
     else alert ('Niste se preijavili u kom letnjem terminu želite da učestvujete.');
     if((zimskiKamp.checked&&cekiraj(document.getElementsByClassName('ztermin')))||letnjiKamp.checked);
     else alert ('Niste se preijavili u kom zimskom terminu želite da učestvujete.');
+
+    //Da li je sve lepo zapisano ?
+
     function proveriUneseneVrednosti(){
         const vrednostIme=ime.value;
         const vrednostPrezime=prezime.value;
@@ -51,6 +59,9 @@ forma.addEventListener('submit',(e)=>{
         }
     }
 });
+
+    //Definisane funkcije
+
     function ucitavanje(){
         forma.submit();
     }
